@@ -12,6 +12,8 @@ string2.o:string2.c inc/string2.h
         gcc string2.c -c string2.c
 all: test.c src/myutil.c src/string2.c src/bit.c  $(BUILD)
 	gcc test.c src/myutil.c src/string2.c src/bit.c $(INC) -o all.out
+run: all.out
+	./all.out	
 clean:
         rm *.out *.o
 $(BUILD):
