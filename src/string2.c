@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include <string.h>
+#include "string2.h"
 
 int FindLength(char str[]) {
    int len = 0;
