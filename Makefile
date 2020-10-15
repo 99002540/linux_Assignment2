@@ -1,19 +1,13 @@
-SRC = src/bit.c\
-src/string1.c\
-src/util.c\
-main.c
-
-INC = -Iinc\
-
-PROJECT_NAME = all.out
-$(PROJECT_NAME): $(SRC)
-	gcc $(SRC) $(INC) -o $(PROJECT_NAME)
-
-all:$(SRC) $(BUILD)
-	gcc $(SRC) $(INC) -o $(PROJECT_NAME)
-
-run:$(PROJECT_NAME)
-	./${PROJECT_NAME}
-
+TARGET=all.out
+S(TARGET):test.o myutil.o string2.o bit.o
+        gcc test.o myutil.o string2.o  bit.o -o all.out
+test.o: test.c  inc/myutil.h inc/bit.h inc/string2.h
+        gcc test.c -c test.c
+myutil.o:myutil.c inc/myutil.h
+        gcc myutil.c -c myutil.c
+bit.o:bit.c inc/bit.h
+        gcc bit.c -c bit.c
+string2.o:string2.c inc/string2.h
+        gcc string2.c -c string2.c
 clean:
-	rm -rf $(PROJECT_NAME)
+        rm *.out *.o
