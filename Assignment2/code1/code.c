@@ -1,44 +1,42 @@
 #include <stdio.h> 
-#include <stdlib.h> // For exit() 
+#include <stdlib.h> 
   
 int main() 
 { 
-    FILE *fptr1, *fptr2; 
-    char filename[100], c; 
+    FILE *fp1, *fp2; 
+    char fname[100], c; 
   
-    printf("Enter the filename to open for reading \n"); 
-    scanf("%s", filename); 
+    printf("Enter the fname for reading \n"); 
+    scanf("%s", fname); 
   
     // Open one file for reading 
-    fptr1 = fopen(filename, "r"); 
-    if (fptr1 == NULL) 
+    fp1 = fopen(fname, "r"); 
+    if (fp1 == NULL) 
     { 
-        printf("Cannot open file %s \n", filename); 
+        printf("Can't open file %s \n", fname); 
         exit(0); 
     } 
   
-    printf("Enter the filename to open for writing \n"); 
-    scanf("%s", filename); 
+    printf("Enter the fname for writing \n"); 
+    scanf("%s", fname); 
   
-    // Open another file for writing 
-    fptr2 = fopen(filename, "w"); 
+ 
+    fp2 = fopen(fname, "r"); 
     if (fptr2 == NULL) 
     { 
-        printf("Cannot open file %s \n", filename); 
+        printf("Can'topen file %s \n", fname); 
         exit(0); 
     } 
   
     // Read contents from file 
-    c = fgetc(fptr1); 
+    c = fgetc(fp1); 
     while (c != EOF) 
     { 
-        fputc(c, fptr2); 
-        c = fgetc(fptr1); 
-    } 
+        fputc(c, fp2); 
+        c = fgetc(fp1); 
+    }
   
-    printf("\nContents copied to %s", filename); 
-  
-    fclose(fptr1); 
-    fclose(fptr2); 
+    fclose(fp1); 
+    fclose(fp2); 
     return 0; 
 }
