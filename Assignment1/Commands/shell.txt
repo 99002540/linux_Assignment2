@@ -1,0 +1,48 @@
+OUT:
+1.What is a shell?
+ans:A shell is a program that receives commands from the user and gives it to the OS to process, and it shows the output.
+2.What is a terminal?
+ans:A shell is a program that receives commands from the user and gives it to the OS to process, and it shows the output.
+3.What is a shell prompt? 
+ans:The shell prompt (or command line) is where one types commands.
+4.What is the typical syntax of a command?
+ans:Command [options] [arguments]
+5.How to specify single letter Vs multi lettered options with commands
+ans: Single letter options start with      -
+Multi lettered options start with   --
+6.List out some available shells for Linux
+ans:bash, ksh, csh, tcsh, zsh
+7.What is the default shell in your machine?
+ans:Bash
+8.What is the full form of Bash
+ans:Bourne Again Shell
+9.How can you navigate between recent commands?
+ans:Use the Up arrow key
+10.How can you auto complete command, file/directory names?
+ans:Use the Tab key
+11.What is the significance of following key strokes
+ans:Ctrl + C, Ctrl + \, Ctrl + Z, Ctrl + U, Ctrl + D Ctrl + L?
+Ctrl+ C - Interrupt (kill) the current foreground process
+Ctrl + \- Quit process (by SIGQUIT signal)
+Ctrl + Z- Suspend process (by SIGTSTP signal)
+Ctrl + U- Discard the current command
+Ctrl + D- End of input
+Ctrl + L- Clear the screen
+12.How to refer documentation of commands?
+ans: man
+13.What are the sections of man pages?
+ans:Executable programs or shell commands
+System calls (functions provided by the kernel)
+Library calls (functions within program libraries)
+Special files (usually found in /dev)
+File formats and conventions eg /etc/passwd
+Games
+Miscellaneous 
+System administration commands (usually only for root)
+Kernel routines
+16.How to quit man page view?
+ans:press q
+4.Identify default Primary, Secondary prompt in the shell?
+ans:The default command prompt is a single character (typically $ or #). When you issue a command that is incomplete, the shell will display a secondary prompt and wait for you to complete the command and hit Enter again. The default secondary prompt is > (the greater than sign)
+10.What is the difference between pseudo terminal and login console?
+ans:A pseudo terminal (PTY) is a user level program that appears to be a terminal device to another program. The console is the text output device for system administration messages. These messages come from the kernel, from the init system and from the system logger.

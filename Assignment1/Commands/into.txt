@@ -1,0 +1,42 @@
+INTRO:
+1.Who initiated Linux Kernel Development?
+ans: Linus Torvalds
+
+2. Who initiated GNU Software Development?
+ans: Richard Stallman
+
+3.What is the full form of GNU?
+ans: GNU's Not Unix
+
+4.What is GNU/Linux?
+ams: Linux is the kernel. Linux is normally used in combination with the GNU operating system: the whole system is basically GNU with Linux added, or GNU/Linux.
+
+5.Do Linux is Free and Open Source software?
+ans: Yes
+
+6.What are the various Open Source Licensing Models, e.g. GPL v3?
+ ans: GNU General Public License (GPL)
+The Apache License.
+Microsoft Public Licenses (Ms-PL)
+Berkeley Software Distribution (BSD)
+Common Development and Distribution License (CDDL)
+Eclipse Public License (EPL)
+MIT License.
+
+7.What is the full form of GPL?
+ans: GNU General Public Licence
+
+8.Identify some popular Linux Distributions
+ans: Ubuntu Linux,Red Hat Enterprise Linux,Linux Mint,Debian
+
+9.Fedora Identify some popular Linux Desktop Environments
+ans: KDE,MATE,GNOME,Cinnamon,Budgie,LXQt,Xfce,Deepin
+
+10.Identify some end user applications in Linux (Alternatives to Windows apps)
+ans: PDF Editor - LibreOffice Draw,LaTeX Editor - TeXmaker,Web Browser - Chromium
+Free Office Suite -LibreOffice
+Image Editor -GIMP
+Linux PDF Viewer -Okular
+
+11.Identify the Programming support in Linux
+ans: PHP, Perl, Ruby, Python, Java, Go, Rust, Haskell
